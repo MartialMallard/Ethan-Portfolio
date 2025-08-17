@@ -38,6 +38,7 @@ nav {
 
 .nav-links {
     gap: 2rem;
+    text-shadow: 2px 2px 2px rgb(230, 230, 230);
     list-style: none;
     font-size: 1.5rem;
 }
@@ -57,6 +58,7 @@ a:hover {
 
 .logo {
     font-size: 2rem;
+    text-shadow: 2px 2px 2px rgb(230, 230, 230);
 }
 
 .logo:hover {
@@ -70,6 +72,7 @@ a:hover {
 }
 
 .hamburger-menu {
+    text-shadow: 2px 2px 2px rgb(230, 230, 230);
     position: relative;
     display: inline-block;
 }
@@ -188,7 +191,7 @@ img[alt="Profile Pic"] {
     display: block;
     width: 250px;
     height: 250px;
-    border: 4px solid rgb(0, 0, 0);
+    border: 4px solid rgb(50, 50, 50);
     border-radius: 50%;
 }
 
@@ -220,6 +223,7 @@ img[alt="Profile Pic"] {
 .title {
     font-size: 2.5rem;
     text-align: center;
+    text-shadow: 2px 2px 2px rgb(230, 230, 230);
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -305,7 +309,7 @@ img[alt="Profile Pic"] {
 
 .project-title {
     color: rgb(230, 230, 230);
-    text-shadow: 2px 2px 5px rgb(55, 55, 55);
+    text-shadow: 2px 2px 2px rgb(55, 55, 55);
     min-width: 300px;
     margin-left: 10px;
     text-align: left;
@@ -320,10 +324,27 @@ img[alt="Profile Pic"] {
 }
 
 .project-showcase {
+    margin-top: 75px;
     float: right;
     object-fit: fill;
     border: 5px solid;
     border-radius: 10px;
+}
+
+.project-roles-container {
+    display: grid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: -10px;
+    width: 400px;
+    color: rgb(230, 230, 230);
+    text-shadow: 2px 2px 5px rgb(55, 55, 55);
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline black;
+    text-underline-offset: 8px;
 }
 
 .project-text-container {
@@ -332,8 +353,9 @@ img[alt="Profile Pic"] {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 10px;
+    margin-top: 20px;
     width: 400px;
-    color: black;
+    color: rgb(50, 50, 50);
     font-size: 1.2rem;
 }
 
