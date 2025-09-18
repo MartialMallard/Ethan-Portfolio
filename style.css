@@ -170,12 +170,28 @@ section {
 
 /* Profile Section */
 
+.profile-text-container {
+    margin: auto;
+    display: grid;
+    padding: 30px;
+    color: rgb(50, 50, 50);
+    font-size: 1.2rem;
+    background: rgb(242, 242, 242);
+}
+
+.profile-text {
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
 #profile {
     justify-content: center;
     display: flex;
     margin: auto;
     width: 100%;
     height: 400px;
+    padding-top: 50px;
     background: rgb(242, 242, 242);
 }
 
@@ -268,14 +284,14 @@ img[alt="Profile Pic"] {
 .learn-more-button {
     font-family: "DM Serif Text", serif;
     position: relative;
-    bottom: 130px;
-    left: 530px;
+    bottom: 120px;
+    left: 630px;
     font-weight: 600;
     transform: all 300ms ease;
     border: rgb(53, 53, 53) 0.2rem solid;
     background: linear-gradient(to top, rgba(185, 185, 185, 0.6), rgba(255, 255, 255, 0.6));
     padding: 2rem;
-    width: 25rem;
+    width: 18rem;
     font-size: 1.15rem;
     border-radius: 3rem;
 }
@@ -384,8 +400,30 @@ img[alt="Profile Pic"] {
 /* About Section */
 
 #about {
-    position: static;
-    border: 10px solid red;
+    justify-content: center;
+    display: grid;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    background: rgb(242, 242, 242);
+}
+
+.about-title {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    color: rgb(80, 80, 80);
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
+    width: 700px;
 }
 
 .about-containers {
@@ -424,11 +462,43 @@ img[alt="Profile Pic"] {
 .section-container {
     gap: 4rem;
     height: 80%;
-    border: 10px solid red;
 }
 
 .section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(230, 230, 230);
+    padding: 20px;
+    margin: 35%;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    background-color: rgb(223, 188, 111);
+    border: 3px solid black;
+    border-radius: 100px;
+}
+
+#contact {
+    justify-content: center;
+    display: flex;
+    margin: 25%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding-top: 55px;
+    height: 150px;
+    background: rgb(242, 242, 242);
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.bottom {
+    height: 150px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(223, 188, 111);
 }

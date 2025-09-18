@@ -15,7 +15,6 @@
             <ul class="nav-links">
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -31,7 +30,6 @@
             <div class="menu-links">
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -53,6 +51,10 @@
             </div>
         </div>
     </section>
+    <div class="profile-text-container">
+        <p class="profile-text" style="font-size: 2.2rem; color: black;">Hi! I'm Ethan.</p>
+        <p class="profile-text">I enjoy playing, making, and writing about games.</p>
+    </div>
     <h1 class="title">Projects and Experience</h1>
     <section id="projects">
         <div class="master-container">
@@ -81,7 +83,7 @@
                     <p>- Project Lead for an endgame level built from scratch</p>
                     <p>- Worked alongside official designers to add enemies and bosses to upcoming releases</p>
                 </div>
-                <button class="learn-more-button" onclick="location.href='./#contact'">Click Here to Learn More</button>
+                <button class="learn-more-button" onclick="location.href='./#contact'">Click to Learn More >>></button>
             </div>
             <div class="project-container" style="background: linear-gradient(to top, rgba(203, 141, 35, 0.75), rgba(154, 140, 32, 0.5)); border-color: rgb(50, 50, 50);">
                 <div class="project-header-container">
@@ -105,32 +107,35 @@
                     <p>- Worked on designing for and reworking various playable classes</p>
                     <p>- Designed and balanced the progression of multiple class skill trees for several archetypes</p>
                 </div>
-                <button class="learn-more-button" onclick="location.href='./#contact'">Click Here to Learn More</button>
+                <button class="learn-more-button" onclick="location.href='./#contact'">Click to Learn More >>></button>
             </div>
         </div>
     </section>
     <h1 class="title">About Me</h1>
     <section id="about">
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon"/>
-                        <h3>Experience</h3>
-                        <p>2+ years <br/>Something</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class="icon"/>
-                        <h3>Education</h3>
-                        <p>2+ years <br/>Something</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-container">
-                <p>testing</p>
-            </div>
+        <div class="about-text">
+            <p class="about-title" style="font-size: 1.8rem; color: rgb(0, 0, 0);">~/~/~ Don't Forget the Fun. ~/~/~</p>
+            <p>
+                Hi, I'm Ethan, and I'm a game designer.
+            </p>
+            <p style="margin-top: 20px;">
+                I think that one of the most important but often overlooked aspects of game design is that beyond all the technical
+                marvel of complex game systems and eye-catching visuals, games are supposed to be fun. It's easy to lose track of that goal
+                until you take a step back and experience it yourself.
+            </p>
+            <p style="margin-top: 20px;">
+                My job as a game designer isn't just to make sure that things work, that's a given. My goal is to provide
+                players with an unforgettable experience.
+            </p>
         </div>
     </section>
+    <h1 class="contact-title">Contact</h1>
+    <section id="contact">
+        <p style="font-size: 1.5rem; color: rgb(0, 0, 0); margin-right: 5px;">Email: </p>
+        <a style="font-size: 1.5rem; color: rgb(0, 120, 255); margin-right: 10px; text-decoration: underline;" href="mailto:ethanzchang@gmail.com">ethanzchang@gmail.com</a>
+        <img src="./assets/linkedin.png" alt="Linkedin" class="icon" onclick="location.href='https://linkedin.com/'">
+    </section>
+    <section class="bottom"></section>
     <script src="script.js"></script>
 </body>
 </html>
