@@ -1,7 +1,6 @@
 /* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,7 @@
 
 body {
     background-color: rgb(215, 215, 183);
-    font-family: "DM Serif Text", serif;
+    font-family: "Sansation", sans-serif;
 }
 
 
@@ -20,7 +19,7 @@ html {
 
 /* Transition */
 
-a, .btn, .learn-more-button{
+a, b, .btn, .learn-more-button{
     transition: all 300ms ease;
 }
 
@@ -207,7 +206,8 @@ img[alt="Profile Pic"] {
     display: block;
     width: 250px;
     height: 250px;
-    border: 4px solid rgb(50, 50, 50);
+    border: 2px solid rgb(50, 50, 50);
+    margin-bottom: 120px;
     border-radius: 50%;
 }
 
@@ -282,18 +282,17 @@ img[alt="Profile Pic"] {
 }
 
 .learn-more-button {
-    font-family: "DM Serif Text", serif;
     position: relative;
     bottom: 120px;
-    left: 630px;
+    left: 560px;
     font-weight: 600;
     transform: all 300ms ease;
     border: rgb(53, 53, 53) 0.2rem solid;
-    background: linear-gradient(to top, rgba(185, 185, 185, 0.6), rgba(255, 255, 255, 0.6));
+    background: rgb(230, 230, 230);
     padding: 2rem;
-    width: 18rem;
+    width: 20rem;
     font-size: 1.15rem;
-    border-radius: 3rem;
+    border-radius: 2rem;
 }
 
 .learn-more-button:hover {
@@ -325,7 +324,7 @@ img[alt="Profile Pic"] {
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
-    height: 500px;
+    height: 550px;
     padding: 20px;
     border: 4px;
     border-style: solid;
@@ -350,10 +349,12 @@ img[alt="Profile Pic"] {
     text-shadow: 2px 2px 2px rgb(55, 55, 55);
     min-width: 300px;
     margin-left: 10px;
-    text-align: left;
+    text-align: center;
     font-size: 1.8rem;
     cursor: default;
     border: 10px solid transparent;
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }
 
 .project-pic-container {
@@ -362,7 +363,7 @@ img[alt="Profile Pic"] {
 }
 
 .project-showcase {
-    margin-top: 20px;
+    margin-top: 80px;
     float: right;
     object-fit: fill;
     border: 5px solid;
@@ -372,16 +373,30 @@ img[alt="Profile Pic"] {
 .project-roles-container {
     display: grid;
     padding: 10px;
-    margin-left: 20px;
-    margin-bottom: -10px;
-    width: 400px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    width: 420px;
     color: rgb(230, 230, 230);
     text-shadow: 2px 2px 5px rgb(55, 55, 55);
     font-size: 1.3rem;
     font-weight: bold;
-    font-style: italic;
-    text-decoration: underline black;
-    text-underline-offset: 8px;
+    border: 3px solid rgb(230, 230, 230);
+    border-radius: 20px;
+    background-color: rgb(90, 167, 75);
+}
+
+.project-description-container {
+    display: grid;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px;
+    margin-top: 20px;
+    gap: 10px;
+    width: 400px;
+    color: rgb(50, 50, 50);
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .project-text-container {
@@ -395,6 +410,12 @@ img[alt="Profile Pic"] {
     width: 400px;
     color: rgb(50, 50, 50);
     font-size: 1.2rem;
+    padding-bottom: 60px;
+}
+
+.project-bullet-point {
+    font-size: 1.2rem;
+    font-style: normal;
 }
 
 /* About Section */
@@ -501,4 +522,61 @@ img[alt="Profile Pic"] {
     margin: auto;
     margin-top: 100px;
     background-color: rgb(223, 188, 111);
+}
+
+#project-separate {
+    justify-content: left;
+    margin: auto;
+    padding-left: 50px;
+    width: 100%;
+    height: 1200px;
+    max-height: 1200px;
+    margin-bottom: -50px;
+    background: rgb(242, 242, 242);
+}
+
+.project-separate-container {
+    display: grid;
+    margin: auto;
+}
+
+.art-credits {
+    text-align: end;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.project-separate-bar {
+    display: flex;
+}
+
+.project-separate-logo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 20px;
+    font-size: 4rem;
+    text-decoration: underline;
+    text-underline-offset: 30px;
+    text-decoration-thickness: 3px;
+    font-weight: bold;
+}
+
+.project-separate-icon {
+    padding-top: 50px;
+    padding-left: 20px;
+    cursor: pointer;
+    height: 4rem;
+}
+
+.project-separate-description {
+    font-size: 1.4rem;
+    font-style: normal;
+    margin-bottom: 50px;
+}
+
+.after-description {
+    font-size: 1.4rem;
+    font-style: normal;
+    margin-top: 50px;
 }
