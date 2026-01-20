@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Ethan Chang</div>
+        <div onclick="location.href='/index.html'" class="logo">Ethan Chang</div>
         <div>
             <ul class="nav-links">
                 <li><a href="/index.html">Main</a></li>
@@ -27,7 +27,7 @@
             <div class="project-separate-bar">
                 <div class="project-separate-logo">Realm of the Mad God Exalt</div>
                 <img src="./assets/rotmglogo.png" alt="RotMG" class="project-separate-icon" onclick="location.href='https://www.realmofthemadgod.com/'">
-                <img src="./assets/steam.png" alt="RotMG" class="project-separate-icon" onclick="location.href='https://store.steampowered.com/app/200210/Realm_of_the_Mad_God_Exalt/'">
+                <img src="./assets/steam.png" alt="Steam" class="project-separate-icon" onclick="location.href='https://store.steampowered.com/app/200210/Realm_of_the_Mad_God_Exalt/'">
             </div>
             <p class="project-separate-description">
                 Realm of the Mad God is a co-op, top-down 2D, rogue-like bullet hell MMORPG with permadeath.
@@ -39,60 +39,82 @@
                     - Developed a full-length endgame difficulty level from scratch as part of the User-Generated Content program, including multiple new bosses, enemies, and items.
                 </p>
                 <p class="project-separate-bullet-point">
-                    - Worked with the design team to provide additional smaller content to major updates.
+                    - Worked with the design team to provide additional boss and enemy content to major updates.
                 </p>
                 <p class="project-separate-bullet-point">
-                    - Trained new members of the User-Generated content team to be more familiar with the available scripting tools and how to design content.
+                    - Currently train and assist new members of the User-Generated content team with designing content and becoming more familiar with the development tools.
                 </p>
                 <p class="project-separate-bullet-point">
-                    - Provided specs for new scripting functions that were added to the available tools used by the official design team.
+                    - Provided specs for new scripting functions that are used within the official design team.
                 </p>
                 <p class="project-separate-bullet-point">
-                    - Participated in discussions with the design team to plan for future content updates.
+                    - Participated in discussions and planning with the official design team to spec out content for future updates.
                 </p>
                 <p class="project-separate-bullet-point">
-                    - Contributed detailed art mockups to the art team that were used as reference for final products.
-                </p>
-                <p class="project-separate-bullet-point">
-                    - Participated in weekly closed testing sessions as part of the Closed Testing program, providing valuable feedback to the design team.
+                    - Participated in weekly closed testing sessions as part of the game's Closed Testing program, involving providing detailed bug reports and reproduction steps.
                 </p>
             </div>
         </div>
         <div class="project-separate-header">Additional Details</div>
-        <div class="section-separate-header">My Journey</div>
-        <p class="after-description" style="width: 70%;">
-            I had originally started my close involvement with Realm of the Mad God back in 2021, where during a time of personal struggle I wrote and published a
-            game design essay to the community's subreddit that detailed some of the most prevalent issues facing the game. This was met with a large amount of community
-            discussion and even led to recognition by the official design team at that time, which springboarded towards being part of the first wave of closed testers that weren't
-            strictly invited through personal recommendation.
-        </p>
-        <p class="after-description" style="width: 70%;">
-            The opportunity provided to me through this experience wasn't without struggle, however. I was thrust into an environment where many veterans of both the Closed Testing
-            and User-Generated Content programs had left the team, with the only thing left behind for me to work with was outdated documentation. At that point, it became evident that
-            I would have to be the person to take the torch if the program were to survive.
-        </p>
-        <p class="after-description" style="width: 70%;">
-            During the following year, I spent my time independently learning through the remaining documentation and updating it myself. It was only towards the tail-end
-            of this period that the program started to recover, as new faces decided to stick around longer and were more willing to interact with the existing documentation.
-            Through my effort of consistent activity, I was able to provide a foundation for the community of User-Generated Content members to recover.
-        </p>
+        
         <p class="after-description" style="width: 75%;">
             My biggest accomplishment working on Realm of the Mad God is my full-length endgame dungeon project, the Spectral Penitentiary.
         </p>
-        <div style="display: flex; align-items: flex-start; width: 95%;">
+        <div class="after-section-holder">
             <div>
-                <img src="./assets/SpecPen_MyDignity.png" style="width: 600px; margin-bottom: 5px;">
+                <img src="./assets/SpecPen_MyDignity.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px;">
                 <p style="margin-bottom: 20px;">Image Credits: MyDignity</p>
             </div>
-            <div style="display: grid;">
-                <p style="font-size: 1.2rem; margin-left: 20px">
-                    Spectral Penitentiary was developed entirely from scratch within the course of 2 years.
-                    During this period of time, I sought out to find solutions for one of the most prevalent
-                    issues experienced with the game's level design, being the dungeon generation algorithm.
+            <div class="after-section-text">
+                <p class="after-section-paragraph">
+                    
+
+
+                    Working on Realm of the Mad God has taught me a lot about the value of having stronger
+                    technical knowledge on the tools that a team of designers uses.
+
+                    Due to the nature of the game's long and rocky development history, the game has accrued a mountain
+                    of technical debt intertwined with delicate game systems. 
+
+                    Reducing the friction [] is both benefici
+
+
+
                 </p>
-                <p style="font-size: 1.2rem; margin-left: 20px; margin-top: 20px;">
-                    Procedural generation
+                <p class="after-section-paragraph">
+                    The Spectral Penitentiary was developed entirely from scratch within the course of 2 years.
+
+                    During the course of its development I encountered a plethora of unique challenges that required me to innovate
+                    and apply brand-new solutions.
                 </p>
+            </div>
+        </div>
+        <div class="after-section-holder">
+            <div class="after-section-text-holder">
+                <div class="after-section-text">
+                    <p class="after-section-paragraph">
+                        Procedural generation is a commonly used feature in rogue-like games in order to increase
+                        the replay value and scalability of game content, and Realm of the Mad God is no different
+                        when it comes to using to generating dungeon levels.
+                        
+                        RotMG uses a relatively linear dungeon generation algorithm. After a starting room is generated,
+                        the algorithm attempts to build a path out of a pool of defined rooms up until a final point, which
+                        is defined as a boss room.
+                    </p>
+                    <p class="after-section-paragraph">
+                        Afterwards, side branches are built on specific rooms that are eligible to extend from. These side branches
+                        are supposed to be what makes the dungeon-crawling aspect of the game appealing, but it poses a few specific
+                        problems within the context of the game.
+                    </p>
+                </div>
+                <div class="after-section-text">
+                    <p class="after-section-paragraph">
+                        
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/rotmgmapexample.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
             </div>
         </div>
     </section>
