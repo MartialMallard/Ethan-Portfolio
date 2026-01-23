@@ -56,42 +56,53 @@
             </div>
         </div>
         <div class="project-separate-header">Additional Details</div>
-        
-        <p class="after-description" style="width: 75%;">
-            My biggest accomplishment working on Realm of the Mad God is my full-length endgame dungeon project, the Spectral Penitentiary.
-        </p>
         <div class="after-section-holder">
             <div>
                 <img src="./assets/SpecPen_MyDignity.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px;">
                 <p style="margin-bottom: 20px;">Image Credits: MyDignity</p>
             </div>
-            <div class="after-section-text">
+            <div class="after-section-text" style="margin-bottom: 50px;">
                 <p class="after-section-paragraph">
-                    
-
-
-                    Working on Realm of the Mad God has taught me a lot about the value of having stronger
-                    technical knowledge on the tools that a team of designers uses.
-
-                    Due to the nature of the game's long and rocky development history, the game has accrued a mountain
-                    of technical debt intertwined with delicate game systems. 
-
-                    Reducing the friction [] is both benefici
-
-
-
+                    Realm of the Mad God (RotMG) is a massively-multiplayer perma-death RPG and also a bullet hell shooter. You play as a
+                    hero of the realm, slaying monsters and crawling dungeons to eventually defeat the Mad God Oryx-- as the game's title suggests--
+                    ad infinitum. The twist is that in contrast to many similarly-themed MMORPGs, RotMG's combat borrows from the often insanely
+                    difficult bullet hell games such as Touhou to make moment-to-moment interactions intense and immediately impactful. The game's
+                    unique position as a genre mashup between a handful of very different types of games also makes it uniquely difficult to design content for.
                 </p>
                 <p class="after-section-paragraph">
-                    The Spectral Penitentiary was developed entirely from scratch within the course of 2 years.
-
-                    During the course of its development I encountered a plethora of unique challenges that required me to innovate
-                    and apply brand-new solutions.
+                    Working on Realm of the Mad God has taught me a lot about the value of knowing how your tools
+                    work and how you can leverage creativity to compensate for a more limited development toolkit.
                 </p>
             </div>
         </div>
+        <div class="line"></div>
         <div class="after-section-holder">
             <div class="after-section-text-holder">
                 <div class="after-section-text">
+                    <p class="after-section-paragraph" style="margin-bottom: 0px; font-weight: bold; text-decoration: underline;">
+                        My design goals for this project were to:
+                    </p>
+                    <p class="after-section-bulletpoint">
+                        - Provide a uniquely non-linear gameplay experience by randomly distributing objectives
+                        throughout the level
+                    </p>
+                    <p class="after-section-bulletpoint">
+                        - Build a level that bypasses the limitations of the game's level-generation
+                    </p>
+                    <p class="after-section-bulletpoint">
+                        - Utilize the game's roguelike aspects to better sustain an infinitely replayable experience,
+                        reducing burnout on repeated play
+                    </p>
+                    <p class="after-section-bulletpoint">
+                        - Foster higher-paced interactions to get players to the fun faster
+                    </p>
+                </div>
+                <div class="after-section-text">
+                    <p class="after-section-paragraph">
+                        The Spectral Penitentiary was developed entirely from scratch within the course of 2 years.
+                        During the course of its development I encountered many unique challenges that required me to innovate
+                        and apply brand-new solutions.
+                    </p>
                     <p class="after-section-paragraph">
                         Procedural generation is a commonly used feature in rogue-like games in order to increase
                         the replay value and scalability of game content, and Realm of the Mad God is no different
@@ -100,8 +111,7 @@
                         RotMG uses a relatively linear dungeon generation algorithm. After a starting room is generated,
                         the algorithm attempts to build a path out of a pool of defined rooms up until a final point, which
                         is defined as a boss room.
-                    </p>
-                    <p class="after-section-paragraph">
+                        
                         Afterwards, side branches are built on specific rooms that are eligible to extend from. These side branches
                         are supposed to be what makes the dungeon-crawling aspect of the game appealing, but it poses a few specific
                         problems within the context of the game.

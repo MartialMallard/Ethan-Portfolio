@@ -674,7 +674,7 @@ img[alt="Profile Pic"] {
     background-color: lightgray;
     border-radius: 10px;
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .after-section-paragraph {
@@ -685,8 +685,34 @@ img[alt="Profile Pic"] {
     line-height: 1.3;
 }
 
+.after-section-bulletpoint-holder {
+    display: grid;
+    
+    border: 5px solid black;
+}
+
+.after-section-bulletpoint {
+    font-size: 1.0rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -20px;
+    line-height: 1.3;
+}
+
 .after-section-text-holder {
     display: grid;
     margin-right: 20px;
     margin-left: 20px;
+}
+
+.line {
+    height: 1px;
+    border: 0;
+    border-top: 3px solid black;
+    position: relative;
+    margin: auto;
+    left: -50px;
+    width: 80%;
+    margin-bottom: 50px;
+
 }
