@@ -55,17 +55,22 @@
                 </p>
             </div>
         </div>
-        <div class="project-separate-header">Additional Details</div>
+        <div class="line" style="margin-top: 50px;"></div>
         <div class="after-section-holder">
             <div>
-                <img src="./assets/SpecPen_MyDignity.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px;">
-                <p style="margin-bottom: 20px;">Image Credits: MyDignity</p>
+                <video class="animated-showcase" style="border-color: rgba(50, 50, 50, 0);" width="600" height="400" autoplay muted loop disablepictureinpicture>
+                    <source src="./assets/lobo.mp4" type="video/mp4">
+                </video>
+                <p style="margin-bottom: 20px; font-style: italic;">Example of RotMG's chaotic, fast-paced multiplayer combat</p>
             </div>
             <div class="after-section-text" style="margin-bottom: 50px;">
                 <p class="after-section-paragraph">
                     Realm of the Mad God (RotMG) is a massively-multiplayer perma-death RPG and also a bullet hell shooter. You play as a
                     hero of the realm, slaying monsters and crawling dungeons to eventually defeat the Mad God Oryx-- as the game's title suggests--
-                    ad infinitum. The twist is that in contrast to many similarly-themed MMORPGs, RotMG's combat borrows from the often insanely
+                    ad infinitum.
+                </p>
+                <p class="after-section-paragraph">
+                    The twist is that in contrast to many similarly-themed MMORPGs, RotMG's combat borrows from the often insanely
                     difficult bullet hell games such as Touhou to make moment-to-moment interactions intense and immediately impactful. The game's
                     unique position as a genre mashup between a handful of very different types of games also makes it uniquely difficult to design content for.
                 </p>
@@ -76,6 +81,11 @@
             </div>
         </div>
         <div class="line"></div>
+        <p class="after-description" style="margin: auto; width: 85%; margin-bottom: 50px; text-align: center; font-weight: bold;">
+            I would consider the Spectral Penitentiary to be my capstone project. It was developed entirely from scratch
+            within the course of 2 years, and I encountered many unique challenges that forced me to come up with
+            creative solutions.
+        </p>
         <div class="after-section-holder">
             <div class="after-section-text-holder">
                 <div class="after-section-text">
@@ -94,40 +104,31 @@
                         reducing burnout on repeated play
                     </p>
                     <p class="after-section-bulletpoint">
-                        - Foster higher-paced interactions to get players to the fun faster
+                        - Foster higher-paced interactions to engage players at a more streamlined pace
+                    </p>
+                    <p class="after-section-bulletpoint">
+                        - Apply adaptive difficulty scaling to accomodate for a wider range of player skill levels
                     </p>
                 </div>
                 <div class="after-section-text">
-                    <p class="after-section-paragraph">
-                        The Spectral Penitentiary was developed entirely from scratch within the course of 2 years.
-                        During the course of its development I encountered many unique challenges that required me to innovate
-                        and apply brand-new solutions.
-                    </p>
                     <p class="after-section-paragraph">
                         Procedural generation is a commonly used feature in rogue-like games in order to increase
-                        the replay value and scalability of game content, and Realm of the Mad God is no different
-                        when it comes to using to generating dungeon levels.
-                        
-                        RotMG uses a relatively linear dungeon generation algorithm. After a starting room is generated,
-                        the algorithm attempts to build a path out of a pool of defined rooms up until a final point, which
-                        is defined as a boss room.
-                        
-                        Afterwards, side branches are built on specific rooms that are eligible to extend from. These side branches
-                        are supposed to be what makes the dungeon-crawling aspect of the game appealing, but it poses a few specific
-                        problems within the context of the game.
+                        the replay value and scalability of game content through semi-randomized level generation.
+                        Unfortunately, RotMG's implementation lacks a crucial element that helps tie these sorts of
+                        systems together-- loops!
                     </p>
-                </div>
-                <div class="after-section-text">
                     <p class="after-section-paragraph">
-                        
+                        Loops are crucial to invoking a sense of meaningful navigation.
                     </p>
                 </div>
             </div>
             <div>
                 <img src="./assets/rotmgmapexample.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
+                <p style="margin-bottom: 20px; font-style: italic;">Example of </p>
             </div>
         </div>
     </section>
     <section class="bottom"></section>
+    <script src="script.js"></script>
 </body>
 </html>

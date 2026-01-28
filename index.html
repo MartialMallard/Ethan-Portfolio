@@ -48,9 +48,9 @@
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="Linkedin" class="icon" onclick="location.href='https://linkedin.com/'">
-                <img src="./assets/github.png" alt="Github" class="icon" onclick="location.href='https://github.com/MartialMallard'">
-                <img src="./assets/itchio-textless-black.png" alt="Itch" class="icon" onclick="location.href='https://marshmalla.itch.io/'">
+                <img src="./assets/linkedin.png" alt="Linkedin" class="icon" onclick="openInNewTab('https://linkedin.com/')">
+                <img src="./assets/github.png" alt="Github" class="icon" onclick="openInNewTab('https://github.com/MartialMallard')"">
+                <img src="./assets/itchio-textless-black.png" alt="Itch" class="icon" onclick="openInNewTab('https://marshmalla.itch.io/')">
             </div>
         </div>
     </section>
@@ -63,7 +63,7 @@
         <div class="master-container">
             <div class="project-container pc1-color" onclick="location.href='./rotmg.html'">
                 <div class="project-header-container">
-                    <img src="./assets/rotmglogo.png" alt="RotMG" class="project-icon" onclick="location.href='https://www.realmofthemadgod.com/'">
+                    <img src="./assets/rotmglogo.png" alt="RotMG" class="project-icon">
                     <h1 class="project-title">Realm of the Mad God</h1>
                 </div>
                 <div class="project-roles-container">
@@ -71,7 +71,7 @@
                 </div>
                 <div class="project-pic-container">
                     <video class="project-showcase" style="border-color: rgb(50, 50, 50);" width="480" height="270" autoplay muted loop disablepictureinpicture>
-                        <source src="./assets/SpecPen Portfolio.mp4" type="video/mp4">
+                        <source src="./assets/rotmg-8mb.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="project-description-container">
@@ -87,9 +87,9 @@
                     <p class="project-bullet-point">- Worked alongside the official design team to add enemies and bosses to upcoming releases</p>
                 </div>
             </div>
-            <div class="project-container pc2-color">
+            <div class="project-container pc2-color" onclick="location.href='./wynncraft.html'">
                 <div class="project-header-container">
-                    <img src="./assets/wynncraftlogo.webp" alt="RotMG" class="project-icon" onclick="location.href='https://wynncraft.com/'">
+                    <img src="./assets/wynncraftlogo.webp" alt="RotMG" class="project-icon">
                     <h1 class="project-title">Wynncraft</h1>
                 </div>
                 <div class="project-roles-container">
@@ -110,9 +110,9 @@
                     <p class="project-bullet-point">- Designed and balanced the progression of multiple class skill trees for several archetypes</p>
                 </div>
             </div>
-            <div class="project-container pc4-color" onclick="location.href='./rotmg.html'">
+            <div class="project-container pc4-color" onclick="location.href='./chewchew.html'">
                 <div class="project-header-container">
-                    <img src="./assets/chewchewtrain_logo.png" alt="ChewChewTrain" class="project-icon" onclick="location.href='https://marshmalla.itch.io/chew-chew-train'" style="height: 10rem;">
+                    <img src="./assets/chewchewtrain_logo.png" alt="ChewChewTrain" class="project-icon" style="height: 10rem;">
                     <h1 class="project-title">Chew Chew Train</h1>
                 </div>
                 <div class="project-roles-container">
@@ -120,7 +120,7 @@
                 </div>
                 <div class="project-pic-container">
                     <video class="project-showcase" style="border-color: rgb(50, 50, 50);" width="480" height="270" autoplay muted loop disablepictureinpicture>
-                        <source src="./assets/ChewChewPortfolio.mp4" type="video/mp4">
+                        <source src="./assets/chewchew-8mb.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="project-description-container">
@@ -128,14 +128,14 @@
                     </p>
                 </div>
                 <div class="project-text-container" style="font-size: 1rem; font-weight: bold; height: 150px;">
-                    <p class="project-bullet-point">- Designed and programmed a custom event system, offering</p>
+                    <p class="project-bullet-point">- Designed and programmed a custom event system, allowing unique NPC interactions</p>
                     <p class="project-bullet-point">- Designed and programmed the game's fully randomized map generation</p>
                     <p class="project-bullet-point">- Designed and implemented most of the game's user interface </p>
                 </div>
             </div>
-            <div class="project-container pc3-color" onclick="location.href='./rotmg.html'">
+            <div class="project-container pc3-color" onclick="location.href='./slimelives.html'">
                 <div class="project-header-container">
-                    <img src="./assets/slimelives_logo.png" alt="SlimeLives" class="project-icon" onclick="location.href='https://marshmalla.itch.io/slime-lives'">
+                    <img src="./assets/slimelives_logo.png" alt="SlimeLives" class="project-icon">
                     <h1 class="project-title">Slime Lives</h1>
                 </div>
                 <div class="project-roles-container">
@@ -143,7 +143,7 @@
                 </div>
                 <div class="project-pic-container">
                     <video class="project-showcase" style="border-color: rgb(50, 50, 50);" width="480" height="270" autoplay muted loop disablepictureinpicture>
-                        <source src="./assets/SlimeLivesPortolio.mp4" type="video/mp4">
+                        <source src="./assets/slimelives-8mb.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="project-description-container">
@@ -178,7 +178,7 @@
     <section id="contact">
         <p style="font-size: 1.5rem; color: rgb(0, 0, 0); margin-right: 5px;">Email: </p>
         <a style="font-size: 1.5rem; color: rgb(0, 120, 255); margin-right: 10px; text-decoration: underline;" href="mailto:ethanzchang@gmail.com">ethanzchang@gmail.com</a>
-        <img src="./assets/linkedin.png" alt="Linkedin" class="icon" onclick="location.href='https://linkedin.com/'">
+        <img src="./assets/linkedin.png" alt="Linkedin" class="icon" onclick="openInNewTab('https://linkedin.com/')">
     </section>
     <section class="bottom"></section>
     <script src="script.js"></script>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Chang</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div onclick="location.href='/index.html'" class="logo">Ethan Chang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Main</a></li>
+                <li><a href="/index.html#projects">Projects</a></li>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <img src="./assets/slimelivesbanner.png" style="width: 100%; margin-top: -50px;">
+    <p class="art-credits"></p>
+    <section id="project-separate">
+        <div class="project-separate-container">
+            <div class="project-separate-bar">
+                <div class="project-separate-logo">Slime Lives</div>
+                <img src="./assets/itchio-textless-black.png" alt="Wynncraft" class="project-separate-icon" onclick="openInNewTab('https://marshmalla.itch.io/slime-lives')">
+            </div>
+            <p class="project-separate-description">
+                Slime Lives was a jam submission to Jamsepticeye 2024.
+            </p>
+            <div class="project-bullet-box">
+                <div>
+                    <p class="project-bullet-point" style="text-decoration: underline; text-underline-offset: 5px; margin-bottom: 10px; font-weight: bold;">What I Accomplished:</p>
+                <p class="project-separate-bullet-point">
+                    - Developed a full-length endgame difficulty level from scratch as part of the User-Generated Content program, including multiple new bosses, enemies, and items.
+                </p>
+                <p class="project-separate-bullet-point">
+                    - Worked with the design team to provide additional boss and enemy content to major updates.
+                </p>
+                <p class="project-separate-bullet-point">
+                    - Currently train and assist new members of the User-Generated content team with designing content and becoming more familiar with the development tools.
+                </p>
+                <p class="project-separate-bullet-point">
+                    - Provided specs for new scripting functions that are used within the official design team.
+                </p>
+                <p class="project-separate-bullet-point">
+                    - Participated in discussions and planning with the official design team to spec out content for future updates.
+                </p>
+                <p class="project-separate-bullet-point">
+                    - Participated in weekly closed testing sessions as part of the game's Closed Testing program, involving providing detailed bug reports and reproduction steps.
+                </p>
+            </div>
+        </div>
+        <div class="line" style="margin-top: 50px;"></div>
+        <div class="after-section-holder">
+            <div>
+                <video class="animated-showcase" style="border-color: rgba(50, 50, 50, 0);" width="600" height="400" autoplay muted loop disablepictureinpicture>
+                    <source src="./assets/lobo.mp4" type="video/mp4">
+                </video>
+                <p style="margin-bottom: 20px; font-style: italic;">Example of RotMG's chaotic, fast-paced multiplayer combat</p>
+            </div>
+            <div class="after-section-text" style="margin-bottom: 50px;">
+                <p class="after-section-paragraph">
+                    Realm of the Mad God (RotMG) is a massively-multiplayer perma-death RPG and also a bullet hell shooter. You play as a
+                    hero of the realm, slaying monsters and crawling dungeons to eventually defeat the Mad God Oryx-- as the game's title suggests--
+                    ad infinitum.
+                </p>
+                <p class="after-section-paragraph">
+                    The twist is that in contrast to many similarly-themed MMORPGs, RotMG's combat borrows from the often insanely
+                    difficult bullet hell games such as Touhou to make moment-to-moment interactions intense and immediately impactful. The game's
+                    unique position as a genre mashup between a handful of very different types of games also makes it uniquely difficult to design content for.
+                </p>
+                <p class="after-section-paragraph">
+                    Working on Realm of the Mad God has taught me a lot about the value of knowing how your tools
+                    work and how you can leverage creativity to compensate for a more limited development toolkit.
+                </p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <p class="after-description" style="margin: auto; width: 85%; margin-bottom: 50px; text-align: center; font-weight: bold;">
+            I would consider the Spectral Penitentiary to be my capstone project. It was developed entirely from scratch
+            within the course of 2 years, and I encountered many unique challenges that forced me to come up with
+            creative solutions.
+        </p>
+        <div class="after-section-holder">
+            <div class="after-section-text-holder">
+                <div class="after-section-text">
+                    <p class="after-section-paragraph" style="margin-bottom: 0px; font-weight: bold; text-decoration: underline;">
+                        My design goals for this project were to:
+                    </p>
+                    <p class="after-section-bulletpoint">
+                        - Provide a uniquely non-linear gameplay experience by randomly distributing objectives
+                        throughout the level
+                    </p>
+                    <p class="after-section-bulletpoint">
+                        - Build a level that bypasses the limitations of the game's level-generation
+                    </p>
+                    <p class="after-section-bulletpoint">
+                        - Utilize the game's roguelike aspects to better sustain an infinitely replayable experience,
+                        reducing burnout on repeated play
+                    </p>
+                    <p class="after-section-bulletpoint">
+                        - Foster higher-paced interactions to engage players at a more streamlined pace
+                    </p>
+                    <p class="after-section-bulletpoint">
+                        - Apply adaptive difficulty scaling to accomodate for a wider range of player skill levels
+                    </p>
+                </div>
+                <div class="after-section-text">
+                    <p class="after-section-paragraph">
+                        Procedural generation is a commonly used feature in rogue-like games in order to increase
+                        the replay value and scalability of game content through semi-randomized level generation.
+                        Unfortunately, RotMG's implementation lacks a crucial element that helps tie these sorts of
+                        systems together-- loops!
+                    </p>
+                    <p class="after-section-paragraph">
+                        Loops are crucial to invoking a sense of meaningful navigation.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/rotmgmapexample.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
+                <p style="margin-bottom: 20px; font-style: italic;">Example of </p>
+            </div>
+        </div>
+    </section>
+    <section class="bottom"></section>
+    <script src="script.js"></script>
+</body>
+</html>
