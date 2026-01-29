@@ -20,8 +20,8 @@
             </ul>
         </div>
     </nav>
-    <img src="./assets/chewchewtitle.png" style="width: 100%; margin-top: -50px;">
-    <p class="art-credits">Title screen</p>
+    <img src="./assets/chewchewbanner.png" style="width: 100%; margin-top: -50px;">
+    <p class="art-credits">Undead passengers that are about to be fed to the Chew Chew Train</p>
     <section id="project-separate">
         <div class="project-separate-container">
             <div class="project-separate-bar">
@@ -29,88 +29,126 @@
                 <img src="./assets/itchio-textless-black.png" alt="ChewChewTrain" class="project-separate-icon" onclick="openInNewTab('https://marshmalla.itch.io/chew-chew-train')">
             </div>
             <p class="project-separate-description">
-                Chew Chew Train was our game jam entry for Mashup Game Jam 2025.
+                Chew Chew Train was our team of 5's game jam entry for Mashup Game Jam 2025.
             </p>
             <div class="project-bullet-box">
                 <div>
-                    <p class="project-bullet-point" style="text-decoration: underline; text-underline-offset: 5px; margin-bottom: 10px; font-weight: bold;">I worked on:</p>
+                    <p class="project-bullet-point" style="text-decoration: underline; text-underline-offset: 5px; margin-bottom: 10px; font-weight: bold;">Our Project Goals:</p>
                 <p class="project-separate-bullet-point">
-                    - 
+                    - Create a rogue-like management simulator that was unlike other similar UI-based roguelikes
+                </p>
+                <p class="project-separate-bullet-point">
+                    - Include a handful of unique monster types that change the way you interact with the train car management
+                </p>
+                <p class="project-separate-bullet-point">
+                    - Have randomly-generated level objectives and rewards that ramp up as you progress through the game
+                </p>
+                <p class="project-separate-bullet-point">
+                    - Introduce various NPCs that can impact the way you fill your train
                 </p>
             </div>
         </div>
         <div class="line" style="margin-top: 50px;"></div>
-        <div class="after-section-holder">
+        <div class="after-section-holder" style="margin-bottom: 50px;">
             <div>
-                <video class="animated-showcase" style="border-color: rgba(50, 50, 50, 0);" width="600" height="400" autoplay muted loop disablepictureinpicture>
-                    <source src="./assets/lobo.mp4" type="video/mp4">
-                </video>
-                <p style="margin-bottom: 20px; font-style: italic;">Example of RotMG's chaotic, fast-paced multiplayer combat</p>
-            </div>
-            <div class="after-section-text" style="margin-bottom: 50px;">
-                <p class="after-section-paragraph">
-                    Realm of the Mad God (RotMG) is a massively-multiplayer perma-death RPG and also a bullet hell shooter. You play as a
-                    hero of the realm, slaying monsters and crawling dungeons to eventually defeat the Mad God Oryx-- as the game's title suggests--
-                    ad infinitum.
-                </p>
-                <p class="after-section-paragraph">
-                    The twist is that in contrast to many similarly-themed MMORPGs, RotMG's combat borrows from the often insanely
-                    difficult bullet hell games such as Touhou to make moment-to-moment interactions intense and immediately impactful. The game's
-                    unique position as a genre mashup between a handful of very different types of games also makes it uniquely difficult to design content for.
-                </p>
-                <p class="after-section-paragraph">
-                    Working on Realm of the Mad God has taught me a lot about the value of knowing how your tools
-                    work and how you can leverage creativity to compensate for a more limited development toolkit.
-                </p>
+                <img src="./assets/chewchewscreen.png" style="width: 800px; height: 500px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
+                <p style="margin-bottom: 20px; font-style: italic;">Dragging passengers from your cabins to be eaten by the train.</p>
             </div>
         </div>
-        <div class="line"></div>
-        <p class="after-description" style="margin: auto; width: 85%; margin-bottom: 50px; text-align: center; font-weight: bold;">
-            I would consider the Spectral Penitentiary to be my capstone project. It was developed entirely from scratch
-            within the course of 2 years, and I encountered many unique challenges that forced me to come up with
-            creative solutions.
+        <p class="after-description" style="margin: auto; width: 75%; margin-bottom: 70px; text-align: center; font-weight: bold; font-size: 1.1rem;">
+            Chew Chew Train is a rogue-like management puzzle game where you must take care of spooky passengers that ride your train...
+            except your train also uses passenger as fuel! Will you be able to reach the mysterious End of the Line or will you be eaten
+            by your own train first? There's only one way to find out!
         </p>
+        <div class="line"></div>
         <div class="after-section-holder">
             <div class="after-section-text-holder">
                 <div class="after-section-text">
-                    <p class="after-section-paragraph" style="margin-bottom: 0px; font-weight: bold; text-decoration: underline;">
-                        My design goals for this project were to:
-                    </p>
-                    <p class="after-section-bulletpoint">
-                        - Provide a uniquely non-linear gameplay experience by randomly distributing objectives
-                        throughout the level
-                    </p>
-                    <p class="after-section-bulletpoint">
-                        - Build a level that bypasses the limitations of the game's level-generation
-                    </p>
-                    <p class="after-section-bulletpoint">
-                        - Utilize the game's roguelike aspects to better sustain an infinitely replayable experience,
-                        reducing burnout on repeated play
-                    </p>
-                    <p class="after-section-bulletpoint">
-                        - Foster higher-paced interactions to engage players at a more streamlined pace
-                    </p>
-                    <p class="after-section-bulletpoint">
-                        - Apply adaptive difficulty scaling to accomodate for a wider range of player skill levels
-                    </p>
-                </div>
-                <div class="after-section-text">
-                    <p class="after-section-paragraph">
-                        Procedural generation is a commonly used feature in rogue-like games in order to increase
-                        the replay value and scalability of game content through semi-randomized level generation.
-                        Unfortunately, RotMG's implementation lacks a crucial element that helps tie these sorts of
-                        systems together-- loops!
+                    <p class="after-section-paragraph" style="margin-bottom: -20px; font-weight: bold; font-size: 2.0rem; text-decoration: underline;">
+                        System Design - All Aboard!
                     </p>
                     <p class="after-section-paragraph">
-                        Loops are crucial to invoking a sense of meaningful navigation.
+                        The most defining factor of Chew Chew Train is the plethora of unique interactions that can happen between passengers.
+                        These restrictions can range from simply keeping two different monster types out of the same cabin, to even
+                        transforming a random passenger to a new type of monster.
+                    </p>
+                    <p class="after-section-paragraph">
+                        These interactions fuel the meat of the game, figuratively and literally! Making sure that your passengers don't kill each other
+                        allows the player to feed them back to your train and keep moving forward.
+                    </p>
+                    <p class="after-section-paragraph">
+                        As part of the design process, I was tasked with brainstorming some of these unique effects
+                        and interactions, as well as designing the UI to communicate relevant information about passenger
+                        behaviors.
                     </p>
                 </div>
             </div>
             <div>
-                <img src="./assets/rotmgmapexample.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
-                <p style="margin-bottom: 20px; font-style: italic;">Example of </p>
+                <img src="./assets/chewchewalmanac.png" style="width: 600px; margin-top: 60px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
+                <p style="margin-bottom: 20px; font-style: italic;">An almanac entry for one of the potential train passengers, designed to be a stamp book combined with a passport.</p>
             </div>
         </div>
+        <div class="after-section-holder" style="margin-top: 50px;">
+            <div>
+                <img src="./assets/chewchewmapmockup.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
+                <img src="./assets/chewchewmapfinal.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
+                <p style="margin-bottom: 20px; font-style: italic;">Map mockup vs final results. The Station UI is modeled off of a travel brochure.</p>
+            </div>
+            <div class="after-section-text-holder">
+                <div class="after-section-text" style="margin-top: 50px;">
+                    <p class="after-section-paragraph" style="margin-bottom: -20px; font-weight: bold; font-size: 1.8rem; text-decoration: underline;">
+                        Level Design and Programming
+                    </p>
+                    <p class="after-section-paragraph">
+                        The main inspiration I took from while programming the map generation was from Slay the Spire's maze-like layouts.
+                        However, we had different design considerations when it came to communicating information that required us to branch out a bit.
+                    </p>
+                    <p class="after-section-paragraph">
+                        The decision to make a roguelike management game neccessitated two major considerations, the first of which being
+                        randomized levels. My approach towards making the routing through these randomized levels more impactful was through 
+                        the use of stage gimmicks.
+                    </p>
+                    <p class="after-section-paragraph">
+                        Stage gimmicks are modifiers that change the way that you interact with your cars and passengers. They serve to make the
+                        passenger interactions slightly more difficult.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="after-section-holder" style="margin-top: 50px;">
+            <div class="after-section-text-holder">
+                <div class="after-section-text">
+                    <p class="after-section-paragraph" style="margin-bottom: -20px; font-weight: bold; font-size: 1.6rem; text-decoration: underline;">
+                        System Design - Random Encounters
+                    </p>
+                    <p class="after-section-paragraph">
+                        The second of the two major considerations that a roguelike game necessitates is random rewards. We had briefly discussed multiple
+                        methods to increase complexity throughout the game, but the delivery method we settled on was station encounters.
+                    </p>
+                    <p class="after-section-paragraph">
+                        Station encounters are guaranteed small cutscenes at the end of each level, featuring a handful of recurring characters. These events
+                        allowed us a flavorful way to ramp up game difficulty and offer interesting choices to players through exchange offers and increased
+                        train capacity. The more space you have, the more you have to pay attention to future interactions.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/chewchewencounter.png" style="width: 600px; margin-top: 20px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
+                <p style="margin-bottom: 20px; font-style: italic;">A random encounter with a shady slime offering extra train capacity.</p>
+            </div>
+        </div>
+        <div class="line" style="margin-top: 50px;"></div>
+        <p class="after-description" style="margin: auto; width: 75%; margin-top: 0px; margin-bottom: 10px; text-align: center; font-weight: bold; font-size: 3.0rem;">
+            Results
+        </p>
+        <div class="after-section-holder" style="margin-top: 20px;">
+            <div>
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/W5hikrLyipM?si=0MszOm-vKk7Ozonf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <p class="after-description" style="margin: auto; width: 75%; margin-top: 20px; margin-bottom: 70px; text-align: center; font-weight: bold; font-size: 1.1rem;">
+            Overall, Chew Chew Train placed 1st in the jam, and 1st place in 3 of the 5 other scoring categories!
+        </p>
     </section>
     <section class="bottom"></section>
     <script src="script.js"></script>
