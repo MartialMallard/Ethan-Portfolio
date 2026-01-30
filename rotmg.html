@@ -118,15 +118,128 @@
                         systems together-- loops!
                     </p>
                     <p class="after-section-paragraph">
-                        Loops are crucial to invoking a sense of meaningful navigation.
+                        Loops are crucial to invoking a sense of meaningful navigation, allowing both extra ways to path towards
+                        a destination and giving more freedom to explore. Years of experience within the game's development sphere
+                        have made it abundantly clear that this omission in dungeon generation mostly punishes players for going the wrong 
+                        direction, and a lack of available backtracking tools exacerbates this problem.
                     </p>
                 </div>
             </div>
             <div>
-                <img src="./assets/rotmgmapexample.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
-                <p style="margin-bottom: 20px; font-style: italic;">Example of </p>
+                <img src="./assets/rotmgmapexample.png" style="width: 600px; margin-top: 50px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
+                <p style="margin-bottom: 20px; font-style: italic;">Example of a dungeon's map generation. Notably, loops do not spawn.</p>
             </div>
         </div>
+        <div class="after-section-holder">
+            <div>
+                <img src="./assets/specpenmap.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black;">
+                <p style="margin-bottom: 20px; font-style: italic;">Spectral Penitentiary's map layout, mainly composed of loops.</p>
+            </div>
+            <div class="after-section-text-holder" style="margin-top: 0px;">
+                <div class="after-section-text">
+                    <p class="after-section-paragraph" style="margin-bottom: -20px; font-weight: bold; font-size: 1.5rem; text-decoration: underline;">
+                        System Design - Creating Non-Linearity
+                    </p>
+                    <p class="after-section-paragraph">
+                        I spent a very long time trying to find a workaround to this issue that played within the constraints of the dungeon
+                        generation algorithm. After a certain point however, I decided that the only way I was going to bypass this problem
+                        was to view it in the same way that I had originally approached it-- forcing the loops into existence and making my own
+                        dungeon generation algorithm.
+                    </p>
+                    <p class="after-section-paragraph">
+                        Most of the following process involved me improvising a method of randomly generating room layouts in predetermined locations,
+                        utilizing the existing scripting tools. I had to manually implement multiple different randomization features that the game's original
+                        algorithm would have automatically done, but writing the functions myself allowed me much greater control over smaller gameplay
+                        tweaks. Through a lot of iteration I was able to create the non-linear experience I had originally wanted, but it came with several concessions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="after-section-holder">
+            <div class="after-section-text-holder" style="margin-top: 100px; max-width: 650px;">
+                <div class="after-section-text">
+                    <p class="after-section-paragraph" style="margin-bottom: -20px; font-weight: bold; font-size: 1.6rem; text-decoration: underline;">
+                        Level Design - Backed Into 4 Corners
+                    </p>
+                    <p class="after-section-paragraph">
+                        One of the most challenging parts of the design process was made apparent through the restrictions of pre-generated room dimensions. Every single
+                        room that I created needed to be an exact size, be accessible from all four cardinal directions, and still provide
+                        enough variety so you don't feel like you're encountering the same room more than once.
+                    </p>
+                    <p class="after-section-paragraph">
+                        In total, the dungeon has over 50 different unique room types! Needless to say, it was extremely exhausting, but I still found myself wishing I had
+                        chosen larger room dimensions. To avoid the homogenization of room layouts within my constraints however, I needed diversify the available challenges in each room.
+                    </p>
+                    <p class="after-section-paragraph">
+                        One of the solutions that I utilized was to make multiple branches of the dungeon. After entering, you are offered two out of the four
+                        possible branches of the dungeon. This extra degree of randomness allowed me to save resources on unique room layouts by providing different challenges based on
+                        the theme of their respective branch.
+                    </p>
+                    <p class="after-section-paragraph">
+                        This served two important purposes. The first of which was allowing me to utilize zone-specific mechanics to influence
+                        player pathing rather than rely entirely on the tile layouts. The second of which involved reimagining the classic dungeon
+                        gameplay loop to accomodate for a wider range of player archetypes.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/cellroomlayout.png" style="width: 400px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black; margin-left: 50px;">
+                <p style="margin-bottom: 20px; font-style: italic; text-align: center;">One of the Prison Cell rooms, featuring multiple PoIs and unlockable zones that open up the available traversal space.</p>
+                <img src="./assets/gardenroomlayout.png" style="width: 400px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black; margin-left: 50px;">
+                <p style="margin-bottom: 20px; font-style: italic; text-align: center;">One of the Courtyard rooms, featuring a main set of lower-value PoIs separated by several choke points.</p>
+                
+            </div>
+        </div>
+        <div class="after-section-holder">
+            <div>
+                <img src="./assets/rotmgclassicloop.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black; margin-top: 0px;">
+                <p style="margin-bottom: 20px; font-style: italic;">A classic dungeon's linear gameplay progression.
+                </p>
+                <img src="./assets/specpengameplayloop.png" style="width: 600px; margin-bottom: 5px; border-radius: 10px; border: 3px solid black; margin-top: 0px;">
+                <p style="margin-bottom: 20px; font-style: italic;">The dungeon's gameplay loop. Allowing players to cash out at differing intervals reduces commitment and accomodates
+                    for different durations and intensity of play.
+                </p>
+            </div>
+            <div class="after-section-text-holder" style="margin-top: 50px;">
+                <div class="after-section-text">
+                    <p class="after-section-paragraph" style="margin-bottom: -20px; font-weight: bold; font-size: 1.4rem; text-decoration: underline;">
+                        System Design - Building for Accessibility
+                    </p>
+                    <p class="after-section-paragraph">
+                        In most typical MMORPGs, endgame content usually consists of high-duration and high-commitment activities. While this is definitely something that endgame players
+                        want (or begrudgingly deal with), my dungeon was built with the idea that the content should be accessible to a wide array of player duration and commitment levels.
+                        This required me to adopt a different gameplay loop as opposed to much of the game's content.
+                    </p>
+                    <p class="after-section-paragraph">
+                        Contrary to the linear progression of the classic dungeon loop, Spectral Penitentiary provides a more varied and rewarding gameplay loop by lowering
+                        necessary commitment and utilizing a prolonged reward pacing.
+                    </p>
+                    <p class="after-section-paragraph">
+                        Providing multiple different ways to play through content was a necessary consideration in my opinion. After all, I think that it would be a waste of
+                        development time to not take advantage of adaptive content.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="after-section-holder">
+            <div class="after-section-text-holder" style="margin-top: 50px;">
+                <div class="after-section-text">
+                    <p class="after-section-paragraph" style="margin-bottom: -20px; font-weight: bold; font-size: 1.4rem; text-decoration: underline;">
+                        A Brief Retrospective
+                    </p>
+                    <p class="after-section-paragraph">
+                        Overall, this project emerged as a fairly large technical achievment, although the massive initial scope led to this project lasting a lot longer than I 
+                        had anticipated (2 years!). I learned a lot through trial and error, especially since there was a lack of documentation at the time I started learning how to
+                        work with the limited tools. My work didn't come without regrets though, and I wish that I utilized more opportunities to get feedback on the intuitiveness of
+                        some mechanics, as I noticed that the visual communication of certain elements were seen as completely arbitray information rather than useful.
+                    </p>
+                    <p class="after-section-paragraph">
+                        At the end of the day, players seemed to love it though. In my book, I'd call that a success.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="line" style="margin-top: 20px;"></div>
     </section>
     <section class="bottom"></section>
     <script src="script.js"></script>
